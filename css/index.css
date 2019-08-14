@@ -135,3 +135,46 @@ body {
   height: 100%;
 }
 /* Custom CSS */
+.body-con {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+header .brand-info {
+  display: flex;
+  justify-content: space-between;
+}
+header .brand-info .brand-details {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding-bottom: 1.2em;
+}
+header .brand-info .brand-details img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  padding-bottom: 0.7em;
+}
+header .brand-info .brand-details h1 {
+  padding-bottom: 0.7em;
+  font-weight: bold;
+}
+header .brand-info .brand-details h2 {
+  font-weight: bold;
+}
+header .brand-info .info-details p {
+  padding-bottom: 0.7em;
+  text-align: right;
+}
+header .brand-info .info-details p:nth-child(6) {
+  padding-bottom: 0px;
+}
+header .intro p {
+  line-height: 1.5rem;
+}

@@ -65,21 +65,61 @@ html, body {
 
 
 .body-con {
-	// margin: 0 auto;
+	margin: 0 auto;
+	max-width: 1024px;
 }
 
 header {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem;
 
-	.brand-details {
+	.brand-info {
+		display: flex;
+		justify-content: space-between;
 		
+		// max-width: 30%;
 
-		img {
-			
+		.brand-details {
+			display: flex;
+			flex-direction: column;
+			font-size: 1.5rem;
+			text-transform: uppercase;
+			padding-bottom: 1.2em;
+			img {
+				width: 100%;
+				max-width: 300px;
+				height: auto;
+				
+				padding-bottom: 0.7em;
+			}
+			h1 {
+				padding-bottom: 0.7em;
+				font-weight: bold;
+			}
+			h2 {
+				font-weight: bold;
+			}
+		}
+
+		.info-details {
+
+			p {
+				padding-bottom: 0.7em;
+				text-align: right;
+			}
+
+			p:nth-child(6) {
+				padding-bottom: 0px;
+			}
 		}
 	}
 
-	.info-details {
+	.intro {
 		
+		p {
+			line-height: 1.5rem;
+		}
 	}
 }
 
