@@ -145,7 +145,6 @@ header {
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  font-size: 100%;
 }
 header .brand-info {
   display: flex;
