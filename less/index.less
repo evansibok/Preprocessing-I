@@ -59,7 +59,10 @@ html, body {
 
 /* Custom CSS */
 
-// @rootBackgroundColor: #F55C42;
+@primaryColor: #F55C42;
+@baseColor: rgb(29, 29, 29);
+@baseFont: 'Nunito', 'sans-serif';
+
 .flex-column {
 	display: flex;
 	flex-direction: column;
@@ -72,6 +75,7 @@ html, body {
 
 html {
 	background-color: rgb(109, 33, 20);
+	font-family: @baseFont;
 }
 
 .body-con {
@@ -84,6 +88,10 @@ header {
 	.flex-column();
 	padding: 2rem;
 
+	@media screen and (max-width: 500px) {
+		
+	}
+
 	.brand-info {
 		.flex-space-between();
 
@@ -92,7 +100,6 @@ header {
 			font-size: 1.5rem;
 			text-transform: uppercase;
 			padding-bottom: 1.2em;
-			font-family: 'Nunito', 'sans-serif';
 			
 			img {
 				width: 100%;
@@ -104,14 +111,14 @@ header {
 			h1 {
 				padding-bottom: 0.9em;
 				font-weight: bold;
-				color: #F55C42;
+				color: @primaryColor;
 				font-size: 0.9em;
 				letter-spacing: 0.05em;
 				
 			}
 			h2 {
 				font-weight: bold;
-				color: #F55C42;
+				color: @primaryColor;
 				font-size: 0.9em;
 				letter-spacing: 0.05em;
 			}
@@ -129,7 +136,7 @@ header {
 			}
 
 			a {
-				color: #244;
+				color: @baseColor;
 				text-decoration: none;
 
 				&:hover {
@@ -160,7 +167,7 @@ main {
 
 		h3 {
 			&:nth-child(1) {
-				color: #F55C42;
+				color: @primaryColor;
 			}
 		}
 		
@@ -174,7 +181,7 @@ main {
 					margin-bottom: 0.5em;
 					
 					&:nth-child(1) {
-						color: #444;
+						color: @baseColor;
 					}
 				}
 
@@ -195,7 +202,7 @@ main {
 					margin-bottom: 0.5em;
 
 					&:nth-child(1) {
-						color: #444;
+						color: @baseColor;
 					}
 				}
 
@@ -226,14 +233,14 @@ main {
 				margin-bottom: 0.5em;
 
 				&:nth-child(1) {
-					color: #F55C42;
+					color: @primaryColor;
 				}
 			}
 
 			.mentor {
 				h3 {
 					&:nth-child(1) {
-						color: #444;
+						color: @baseColor;
 					}
 				}
 			}
@@ -246,7 +253,7 @@ main {
 				margin-bottom: 0.5em;
 
 				&:nth-child(1) {
-					color: #F55C42;
+					color: @primaryColor;
 				}
 			}
 		}
@@ -256,7 +263,7 @@ main {
 		max-width: 400px;
 		
 		h3:nth-child(1) {
-			color: #F55C42;
+			color: @primaryColor;
 		}
 
 		.education {
@@ -268,7 +275,7 @@ main {
 					margin-bottom: 0.5em;
 
 					&:nth-child(1) {
-						color: #444;
+						color: @baseColor;
 					}
 				}
 
@@ -283,7 +290,7 @@ main {
 					margin-bottom: 0.5em;
 
 					&:nth-child(1) {
-						color: #444;
+						color: @baseColor;
 					}
 				}
 
@@ -303,7 +310,7 @@ main {
 					margin-bottom: 0.5em;
 
 					&:nth-child(1) {
-						color: #F55C42;
+						color: @primaryColor;
 					}
 				}
 
@@ -318,7 +325,7 @@ main {
 					margin-bottom: 0.5em;
 
 					&:nth-child(1) {
-						color: #F55C42;
+						color: @primaryColor;
 					}
 				}
 
@@ -335,7 +342,7 @@ main {
 				margin-bottom: 0.5em;
 
 				&:nth-child(1) {
-					color: #F55C42;
+					color: @primaryColor;
 				}
 			}
 
