@@ -59,6 +59,8 @@ html, body {
 
 /* Custom CSS */
 
+@mobileRootFontSize: 150%;
+
 @primaryColor: #F55C42;
 @baseColor: rgb(29, 29, 29);
 @baseFont: 'Nunito', 'sans-serif';
@@ -71,6 +73,18 @@ html, body {
 .flex-space-between {
 	display: flex;
 	justify-content: space-between;
+}
+
+.flex-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.h1-h2-styling {
+	font-weight: bold;
+	color: @primaryColor;
+	font-size: 0.9em;
+	letter-spacing: 0.05em;
 }
 
 html {
@@ -88,43 +102,52 @@ header {
 	.flex-column();
 	padding: 2rem;
 
-	@media screen and (max-width: 500px) {
-		
-	}
-
 	.brand-info {
 		.flex-space-between();
+
+		@media screen and (max-width: 500px) {
+			.flex-column();
+		}
 
 		.brand-details {
 			.flex-column();
 			font-size: 1.5rem;
 			text-transform: uppercase;
 			padding-bottom: 1.2em;
+
+			@media screen and (max-width: 500px) {
+				.flex-center();
+				text-align: center;
+			}
 			
 			img {
 				width: 100%;
 				max-width: 300px;
 				height: auto;
-				
 				padding-bottom: 0.9em;
 			}
 			h1 {
 				padding-bottom: 0.9em;
-				font-weight: bold;
-				color: @primaryColor;
-				font-size: 0.9em;
-				letter-spacing: 0.05em;
-				
+				.h1-h2-styling();
 			}
 			h2 {
-				font-weight: bold;
-				color: @primaryColor;
-				font-size: 0.9em;
-				letter-spacing: 0.05em;
+				.h1-h2-styling();
+
+				@media screen and (max-width: 500px) {
+					.flex-center();
+					line-height: 2rem;
+				}
 			}
 		}
 
 		.info-details {
+
+			@media screen and (max-width: 500px) {
+				.flex-column();
+				.flex-center();
+				text-align: center;
+				font-size: 1.5rem;
+			}
 
 			p {
 				padding-bottom: 1.1em;
@@ -132,6 +155,10 @@ header {
 
 				&:nth-child(6) {
 					padding-bottom: 0px;
+				}
+
+				@media screen and (max-width: 500px) {
+					font-size: 1rem;	
 				}
 			}
 
@@ -147,9 +174,14 @@ header {
 	}
 
 	.intro {
-		
+
+		@media screen and (max-width: 500px) {
+			text-align: center;
+			padding-top: ;
+		}
+
 		p {
-			line-height: 1.5rem;
+			line-height: 1.5rem;	
 		}
 	}
 }

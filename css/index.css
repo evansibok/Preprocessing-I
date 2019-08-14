@@ -143,6 +143,16 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.h1-h2-styling {
+  font-weight: bold;
+  color: #F55C42;
+  font-size: 0.9em;
+  letter-spacing: 0.05em;
+}
 html {
   background-color: #6d2114;
   font-family: 'Nunito', 'sans-serif';
@@ -161,12 +171,25 @@ header .brand-info {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 500px) {
+  header .brand-info {
+    display: flex;
+    flex-direction: column;
+  }
+}
 header .brand-info .brand-details {
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
   text-transform: uppercase;
   padding-bottom: 1.2em;
+}
+@media screen and (max-width: 500px) {
+  header .brand-info .brand-details {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 header .brand-info .brand-details img {
   width: 100%;
@@ -187,6 +210,23 @@ header .brand-info .brand-details h2 {
   font-size: 0.9em;
   letter-spacing: 0.05em;
 }
+@media screen and (max-width: 500px) {
+  header .brand-info .brand-details h2 {
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  header .brand-info .info-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+}
 header .brand-info .info-details p {
   padding-bottom: 1.1em;
   text-align: right;
@@ -194,12 +234,23 @@ header .brand-info .info-details p {
 header .brand-info .info-details p:nth-child(6) {
   padding-bottom: 0px;
 }
+@media screen and (max-width: 500px) {
+  header .brand-info .info-details p {
+    font-size: 1rem;
+  }
+}
 header .brand-info .info-details a {
   color: #1d1d1d;
   text-decoration: none;
 }
 header .brand-info .info-details a:hover {
   cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+  header .intro {
+    text-align: center;
+    padding-top: ;
+  }
 }
 header .intro p {
   line-height: 1.5rem;
