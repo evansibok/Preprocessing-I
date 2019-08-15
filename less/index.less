@@ -193,8 +193,50 @@ header {
 	.flex-column();
 	padding: 2rem;
 
+	@media screen and @mobileScreenSize {
+		padding-top: 0;
+	}
+
+	nav {
+		ul {
+			display: flex;
+			.flex-center();
+
+			@media screen and @mobileScreenSize {
+				.flex-column();
+				text-align: center;
+			}
+
+			li {
+				padding: 1em 2em;
+				font-weight: bold;
+				text-transform: uppercase;
+
+				@media screen and @mobileScreenSize {
+					border-bottom: 2px dashed @primaryColor;
+					width: 450px;
+				}
+
+				&:hover {
+					background-color: @primaryColor;
+				}
+
+				a {
+					color: @baseColor;
+					text-decoration: none;
+
+					&:hover {
+						border-bottom: 2px dashed white;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+
 	.brand-info {
 		.flex-space-between();
+		padding-top: 1.5rem;
 
 		@media screen and @mobileScreenSize {
 			.flex-column();
@@ -218,10 +260,11 @@ header {
 				padding-bottom: 0.9em;
 			}
 			h1 {
-				padding-bottom: 0.9em;
+				padding-top: 0.7em;
 				.h1-h2-styling();
 			}
 			h2 {
+				padding-top: 1.3em;
 				.h1-h2-styling();
 
 				@media screen and @mobileScreenSize {
@@ -244,7 +287,7 @@ header {
 				text-align: right;
 
 				&:last-child {
-					padding-bottom: 0px;
+					padding-bottom: 2.5em;
 
 					@media screen and @mobileScreenSize {
 						padding-bottom: 1.1em;
