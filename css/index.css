@@ -294,6 +294,9 @@ header .brand-info .info-details p:last-child {
     font-size: 0.65em;
   }
 }
+header .brand-info .info-details span.locale {
+  color: #f55c42 !important;
+}
 header .brand-info .info-details a {
   color: #f55c42;
   text-decoration: none;
